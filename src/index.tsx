@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "sanitize.css";
 import { GlobalStyle } from "./style/global";
+import { ThemeContext, state } from "./context/themeContext";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
