@@ -49,5 +49,6 @@ export const fetchBook = async (bookId: string) => {
 
 export const likeBook = async (bookId: number) => {
   const response = await httpClient.post(`/likes/${bookId}`);
+
   return response.data;
 };
