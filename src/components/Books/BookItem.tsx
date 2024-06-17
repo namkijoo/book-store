@@ -1,9 +1,9 @@
 import { FaHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
-import { Book } from "../../models/book.model";
-import { formatNumber } from "../../utils/format";
-import { getImgSrc } from "../../utils/image";
+import { Book } from "@/models/book.model";
+import { formatNumber } from "@/utils/format";
+import { getImgSrc } from "@/utils/image";
 import { ViewMode } from "./BooksViewSwitcher";
 
 interface Props {
