@@ -106,3 +106,9 @@ export const likeBook = async (bookId: number) => {
 
   return response.data;
 };
+
+export const fetchBesBooks = async () => {
+  const response = await httpClient.get<Book[]>(`/books/best`);
+
+  return response.data;
+};
