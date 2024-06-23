@@ -100,6 +100,17 @@ const BannerButton = styled.div`
     &.next {
       right: 10px;
     }
+    @media ${({ theme }) => theme.mediaQuery.mobile} {
+      width: 28px;
+      height: 28px;
+      font-size: 1.5rem;
+      &.prev {
+        left: 0;
+      }
+      &.net {
+        right: 0;
+      }
+    }
   }
 `;
 
@@ -120,6 +131,17 @@ const BannerIndicator = styled.div`
 
     &.active {
       background: ${({ theme }) => theme.color.primary};
+    }
+  }
+  @media ${({ theme }) => theme.mediaQuery.mobile} {
+    bottom: 0;
+    span {
+      width: 12px;
+      height: 12px;
+
+      &.active {
+        width: 24px;
+      }
     }
   }
 `;
